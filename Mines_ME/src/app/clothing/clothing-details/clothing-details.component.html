@@ -1,0 +1,78 @@
+<div  class="container container-lg mx-auto p-3 bg-primary m-3" *ngIf = "clothings$ | async as clothing">     
+  <header class="fw-bolder p-1 fs-4"> View Details</header>
+  <div class="row">
+    <div class="col">
+      <div class="form-floating mb-3">
+        <input type="text"
+               class="form-control"
+               id="floatingCode"
+               placeholder="Cloth ID"
+               [(ngModel)]="clothing.id"> 
+               <label for="floatingid">Cloth Id</label>
+      </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="form-floating mb-3">
+        <input type="text"
+               class="form-control"
+               id="floatingCode"
+               placeholder="Category"
+               [(ngModel)]="clothing.category">
+               <label for="floatingcategory">Cloth Category</label> 
+      </div>
+    </div>
+  </div>
+      <div class="form-floating mb-3">
+        <input type="text"
+               class="form-control"
+               id="floatingCode"
+               placeholder="Brand"
+               [(ngModel)]="clothing.brand">
+               <label for="floatingbrand">Cloth Brand</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text"
+               class="form-control"
+               id="floatingCode"
+               placeholder="Size"
+               [(ngModel)]="clothing.size">
+               <label for="floatingsize">Cloth Size</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text"
+               class="form-control"
+               id="floatingCode"
+               placeholder="Color"
+               [(ngModel)]="clothing.color">
+               <label for="floatingcolor">Cloth Color</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text"
+               class="form-control"
+               id="floatingCode"
+               placeholder="Prize"
+               [(ngModel)]="clothing.prize">
+               <label for="floatingprize">Cloth Prize</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text"
+               class="form-control"
+               id="floatingCode"
+               placeholder="Country or Origin"
+               [(ngModel)]="clothing.country">
+               <label for="floatingorigin">Cloth Orginin</label>
+      </div>     
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-secondary" rou>Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+
+</div>
+<!--(click)="gotoClothing(clothing)"--> 
+  
+
+        
+  

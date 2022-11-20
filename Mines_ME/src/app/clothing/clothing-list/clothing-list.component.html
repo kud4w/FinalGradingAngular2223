@@ -1,0 +1,33 @@
+<div class="col 6">
+
+  <div class="container  mt-3">
+      <div class="fs-2 fw-bolder text-white bg-info ps-3">Clothing List</div>
+      <table class="table table-success table-striped">
+          <thead>
+          <tr>
+              <th scope="col">Cloth Category</th>
+              <th scope="col">Cloth Size</th>
+              <th scope="col">Prize</th>     
+              <th scope="col">Actions</th>          
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let clothing of clothing$ | async" [class.selected]="clothing.id === SelectedId">
+              <th scope="row"><a [title]="clothing.category">{{clothing.category}}</a></th>
+              <td>{{clothing.size}}</td>
+              <td>{{clothing.prize}}</td>
+              <td>
+                    <button type="button" class="btn btn-outline-success actions me-1"
+                        [routerLink]="['/clothings', clothing.id]">
+                                <i class="bi bi-info-circle"></i>View 
+                    </button>
+                    <button type="button" class="btn btn-outline-danger actions ms-1">
+                                <i class="bi bi-danger-circle"></i>Delete 
+                  </button>
+              </td>
+          </tr>
+          </tbody>
+      </table>
+  </div>
+
+</div>

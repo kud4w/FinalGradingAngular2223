@@ -1,0 +1,33 @@
+<div class="col 6">
+
+    <div class="container  mt-3">
+        <div class="fs-2 fw-bolder text-white bg-info ps-3">Account List</div>
+        <table class="table table-success table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Fullname</th>
+                <th scope="col">Account Type</th>
+                <th scope="col">Username</th>     
+                <th scope="col">Actions</th>          
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let account of account$ | async" [class.selected]="account.id === SelectedId">
+                <th scope="row"><a [title]="account.id">{{account.firstName}} {{account.middleName}} {{account.lastName}}</a></th>
+                <td>{{account.accountType}}</td>
+                <td>{{account.username}}</td>
+                <td>
+                      <button type="button" class="btn btn-outline-success actions me-1"
+                          [routerLink]="['/accounts', account.id]">
+                                  <i class="bi bi-info-circle"></i>View 
+                      </button>
+                      <button type="button" class="btn btn-outline-danger actions ms-1">
+                                  <i class="bi bi-danger-circle"></i>Delete 
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+  
+  </div>

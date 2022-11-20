@@ -1,0 +1,130 @@
+<div  class="container container-lg mx-auto p-3 bg-primary m-3" *ngIf = "accounts$ | async as account">     
+    <header class="fw-bolder p-1 fs-4"> View Details</header>
+    <!-----------------------------------------ROW 1------------------------------------------->
+    <div class="row">
+      <div class="col-3">
+        <div class="form-floating mb-3">
+          <input type="text"
+                 class="form-control"
+                 id="floatingCode"
+                 placeholder="Cloth ID"
+                 [(ngModel)]="account.id"> 
+                 <label for="floatingid">Cloth Id</label>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-floating mb-3">
+          <input type="text"
+                 class="form-control"
+                 id="floatingCode"
+                 placeholder="FirstName"
+                 [(ngModel)]="account.firstName">
+                 <label for="floatingFirstName">FirstName</label> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-floating mb-3">
+          <input type="text"
+                 class="form-control"
+                 id="floatingCode"
+                 placeholder="LastName"
+                 [(ngModel)]="account.lastName">
+                 <label for="floatingLastName">LastName</label>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-floating mb-3">
+          <input type="text"
+                 class="form-control"
+                 id="floatingCode"
+                 placeholder="MiddleName"
+                 [(ngModel)]="account.middleName">
+                 <label for="floatingMiddleName">MiddleName</label>
+        </div>
+      </div>
+    <div>
+    
+    
+        <div class="form-floating mb-3">
+          <input type="text"
+                 class="form-control"
+                 id="floatingCode"
+                 placeholder="UserName"
+                 [(ngModel)]="account.username">
+                 <label for="floatingUserName">UserName</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text"
+                 class="form-control"
+                 id="floatingCode"
+                 placeholder="Password"
+                 [(ngModel)]="account.password">
+                 <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text"
+                 class="form-control"
+                 id="floatingCode"
+                 placeholder="AccountType"
+                 [(ngModel)]="account.accountType">
+                 <label for="floatingAccountType">Account Type</label>
+        </div> 
+        <div class="form-floating mb-3">
+            <input type="text"
+                   class="form-control"
+                   id="floatingCode"
+                   placeholder="BusinessType"
+                   [(ngModel)]="account.businessType">
+                   <label for="floatingBusinessType">Business Type</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text"
+                   class="form-control"
+                   id="floatingCode"
+                   placeholder="HouseNo"
+                   [(ngModel)]="account.houseNo">
+                   <label for="floatingHouseNo">House No</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text"
+                   class="form-control"
+                   id="floatingCode"
+                   placeholder="City"
+                   [(ngModel)]="account.city">
+                   <label for="floatingCity">City</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text"
+                   class="form-control"
+                   id="floatingCode"
+                   placeholder="SateProvince"
+                   [(ngModel)]="account.stateProvince">
+                   <label for="floatingSateProvince">Sate or Province</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text"
+                   class="form-control"
+                   id="floatingCode"
+                   placeholder="Country"
+                   [(ngModel)]="account.Country">
+                   <label for="floatingCountry">Country</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text"
+                   class="form-control"
+                   id="floatingCode"
+                   placeholder="Zip"
+                   [(ngModel)]="account.zip">
+                   <label for="floatingZip">ZIP Code</label>
+          </div>    
+        <div class="modal-footer">
+          <button type="button"  class="btn btn-secondary" routerLink="account">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+  
+  </div>
+  <!--(click)="gotoaccount(account)"--> 
+    
+  
+          
+    
